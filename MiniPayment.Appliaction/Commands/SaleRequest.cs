@@ -25,8 +25,7 @@ public class SaleHandler : IRequestHandler<SaleRequest, TransactionDto>
 
     public async Task<TransactionDto> Handle(SaleRequest request, CancellationToken cancellationToken)
     {
-
-
+        // ============ Factory Design Pattern ============
         IBank bank;
 
         if (request.BankId == BanksHelper.AKBANK)

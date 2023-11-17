@@ -43,7 +43,7 @@ public class RefundHandler : IRequestHandler<RefundRequest, TransactionDto>
 
 
 
-
+        // ============ Factory Design Pattern ============
         IBank bank;
 
         if (transactionEntity.BankId == BanksHelper.AKBANK)

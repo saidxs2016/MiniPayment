@@ -43,7 +43,7 @@ public class CancelHandler : IRequestHandler<CancelRequest, TransactionDto>
 
 
 
-
+        // ============ Factory Design Pattern ============
         IBank bank;
 
         if (transactionEntity.BankId == BanksHelper.AKBANK)
